@@ -1,10 +1,10 @@
 Package.describe({
   name: 'vimes1984:autoform-textangular',
-  version: '0.0.3',
+  version: '0.0.4',
   // Brief, one-line summary of the package.
   summary: 'Integrate textangular into autoforms',
   // URL to the Git repository containing the source code for this package.
-  git: '',
+  git: 'https://github.com/vimes1984/autoform-textangular',
   // By default, Meteor will default to using README.md for documentation.
   // To avoid submitting documentation, set this field to null.
   documentation: 'README.md'
