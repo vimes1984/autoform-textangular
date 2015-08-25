@@ -34,7 +34,3 @@ var BookSchema = new SimpleSchema({
 ```
 {{> quickForm collection="Books" type="insert"}}
 ```
-
-###Warning###
-
-At now, autoform-textangular doesn't reactive, i.e. if other user delete or edit same object froala-field will not be refresh.
