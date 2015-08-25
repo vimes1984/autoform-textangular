@@ -1,8 +1,8 @@
 Package.describe({
   name: 'vimes1984:autoform-textangular',
-  version: '0.0.1',
+  version: '0.0.2',
   // Brief, one-line summary of the package.
-  summary: '',
+  summary: 'Integrate textangular into autoforms',
   // URL to the Git repository containing the source code for this package.
   git: '',
   // By default, Meteor will default to using README.md for documentation.
@@ -12,7 +12,37 @@ Package.describe({
 
 Package.onUse(function(api) {
   api.versionsFrom('1.1.0.3');
+
+  var both = ['client', 'server'];
+  //both client and server
+  api.use([
+    'templating',
+    'aldeed:autoform@4.2.2'
+  ], both);
+
+  api.use([
+    //'fraywing:text-angular@1.3.11',
+    //'netanelgilad:text-angular@1.3.7',
+  ], 'client');
+
+  api.addFiles([
+    //Autoform stuff
+    'lib/client/template.html',
+    'lib/client/template.js',
+    'lib/client/autoform-textangular.js',
+    //Text angular library stuff
+    'lib/client/rangy-core.js',
+    'lib/client/rangy-selectionsaverestore.js',
+    'lib/client/textAngular.js',
+    'lib/client/textAngular-sanitize.js',
+    'lib/client/textAngularSetup.js',
+    'lib/client/textAngular.css',
+    'lib/client/textAngular.js',
+  ], 'client');
+
   api.addFiles('autoform-textangular.js');
+
+
 });
 
 Package.onTest(function(api) {
