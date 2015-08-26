@@ -16,7 +16,11 @@ Package.onUse(function(api) {
   var both = ['client', 'server'];
   //both client and server
   api.use([
+    'angular:angular@1.2.0',
+    'angular:angular@1.2.0',
+    'urigo:angular@0.9.3',
     'templating',
+    'reactive-var',
     'aldeed:autoform@4.2.2'
   ], both);
 

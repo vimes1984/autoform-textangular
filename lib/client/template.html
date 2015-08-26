@@ -1,7 +1,3 @@
 <template name="autoFormTextAngular">
-    <div ng-controller="textareaController">
-      <div ng-init="htmlvalue = '{{value}}' "></div>
-      <text-angular  class="textangularclass" ng-model="htmlvalue">{{value}}</text-angular>
-      <textarea data-schema-key="{{dataSchemaKey}}"  style="display: none!important;"  ng-model="htmlvalue"></textarea>
-    </div>
+      <text-angular data-schema-key="{{dataSchemaKey}}" class="textangularclass">{{{value}}}</text-angular>
 </template>
