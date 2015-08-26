@@ -1,6 +1,6 @@
 Package.describe({
   name: 'vimes1984:autoform-textangular',
-  version: '0.0.4',
+  version: '1.1.0',
   // Brief, one-line summary of the package.
   summary: 'Integrate textangular into autoforms',
   // URL to the Git repository containing the source code for this package.
