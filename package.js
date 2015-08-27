@@ -1,6 +1,6 @@
 Package.describe({
   name: 'vimes1984:autoform-textangular',
-  version: '1.1.0',
+  version: '1.1.1',
   // Brief, one-line summary of the package.
   summary: 'Integrate textangular into autoforms',
   // URL to the Git repository containing the source code for this package.
@@ -16,7 +16,6 @@ Package.onUse(function(api) {
   var both = ['client', 'server'];
   //both client and server
   api.use([
-    'angular:angular@1.2.0',
     'angular:angular@1.2.0',
     'urigo:angular@0.9.3',
     'templating',
