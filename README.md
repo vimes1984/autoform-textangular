@@ -34,3 +34,5 @@ var BookSchema = new SimpleSchema({
 ```
 {{> quickForm collection="Books" type="insert"}}
 ```
+# To do
+* Add in options to schema
